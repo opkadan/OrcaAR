@@ -11,7 +11,8 @@
 
     <body>
         <div style="height: 500px;" style="width: 500px;">
-
+            
+            <!-- Scene setup with ability to disable VR button and motion permission pop-up on device. -->
             <a-scene vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
                 <!-- <a-entity drag-rotate-component position="0 0 0" scale="15 15 15" gltf-model="https://dqmys3mdlyx3p.cloudfront.net/glbs/spine.glb" animation-mixer></a-entity> -->
                 <a-entity drag-rotate-component position="0 -2 0" scale="15 15 15" gltf-model="./pouch_anim2.glb" animation-mixer></a-entity>
@@ -26,7 +27,9 @@
                 -->
             </a-scene>
         </div>
-        <!--
+        
+        <!-- Attempt at including a controller. UI displays but control response has issues
+
         <div class="controls">
         <div>Roll: <input id="roll" value="20" size="3" class="number"> degrees</div>
         <div>Pitch: <input id="pitch" value="0" size="3" class="number"> degrees</div>
